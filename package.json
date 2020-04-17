@@ -1,0 +1,29 @@
+{
+    "name": "@angular-ru/prettier-config",
+    "version": "0.1.0",
+    "description": "Shared Prettier config for Angular projects",
+    "license": "MIT",
+    "repository": "https://github.com/Angular-RU/angular-prettier-tsconfig",
+    "author": {
+        "name": "Maxim Ivanov",
+        "email": "splincodewd@yandex.ru",
+        "url": "https://github.com/Angular-RU"
+    },
+    "main": ".prettier.json",
+    "files": [
+        ".prettier.json"
+    ],
+    "keywords": [
+        "tsconfig",
+        "typescript",
+        "ts",
+        "config",
+        "configuration"
+    ],
+    "peerDependencies": {
+        "prettier": ">= 2.0.0"
+    },
+    "dependencies": {
+        "prettier": "2.0.4"
+    }
+}
