@@ -11,8 +11,10 @@ const token: string = process.env['NPM_TOKEN']!;
 
 console.log('NPM_TOKEN', !!token);
 
+const pkg: PlainObject = JSON.parse(readFileSync('package.json').toString());
+
 exec(
-    'npm show @angular-ru/eslint-config version',
+    `npm show ${pkg.name} version`,
     (error: ExecException | null, stdout: string, stderr: string): void => {
         if (error) {
             console.error(`exec error: ${error}`);
@@ -25,11 +27,10 @@ exec(
         const minor: number = parseInt(version[1]) + 1;
         const newVersion: string = `${major}.${minor}.0`;
 
-        console.log(`\nPrev "@angular-ru/eslint-config" version: ${oldVersion}`);
-        console.log(`New "@angular-ru/eslint-config" version: ${newVersion}\n`);
-
-        const pkg: PlainObject = JSON.parse(readFileSync('package.json').toString());
         pkg.version = newVersion;
+
+        console.log(`\nPrev "${pkg.name}" version: ${oldVersion}`);
+        console.log(`New "${pkg.name}" version: ${newVersion}\n`);
 
         // eslint-disable-next-line no-magic-numbers
         writeFileSync('package.json', JSON.stringify(pkg, null, 4));
