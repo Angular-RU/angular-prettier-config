@@ -2,21 +2,6 @@
     "name": "@angular-ru/prettier-config",
     "version": "0.1.0",
     "description": "Shared Prettier config for Angular projects",
-    "license": "MIT",
-    "repository": "https://github.com/Angular-RU/angular-prettier-tsconfig",
-    "author": {
-        "name": "Maxim Ivanov",
-        "email": "splincodewd@yandex.ru",
-        "url": "https://github.com/Angular-RU"
-    },
-    "scripts": {
-        "prettier": "prettier",
-        "test": "prettier --write \"**/*.{ts,html,css,scss,md,js,json}\""
-    },
-    "main": ".prettier.json",
-    "files": [
-        ".prettier.json"
-    ],
     "keywords": [
         "tsconfig",
         "typescript",
@@ -24,10 +9,29 @@
         "config",
         "configuration"
     ],
-    "peerDependencies": {
-        "prettier": ">= 2.0.0"
+    "repository": "https://github.com/Angular-RU/angular-prettier-tsconfig",
+    "license": "MIT",
+    "author": {
+        "name": "Maxim Ivanov",
+        "email": "splincodewd@yandex.ru",
+        "url": "https://github.com/Angular-RU"
+    },
+    "main": ".prettier.json",
+    "files": [
+        ".prettier.json"
+    ],
+    "scripts": {
+        "format": "npx sort-package-json && npx prettier --write \"**/*.{ts,html,css,scss,md,js,json}\"",
+        "test": "yarn format"
     },
     "dependencies": {
         "prettier": "2.0.4"
+    },
+    "devDependencies": {
+        "npx": "10.2.2",
+        "sort-package-json": "1.41.0"
+    },
+    "peerDependencies": {
+        "prettier": ">= 2.0.0"
     }
 }
