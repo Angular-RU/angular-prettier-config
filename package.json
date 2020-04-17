@@ -34,6 +34,6 @@
         "typescript": "3.8.3"
     },
     "peerDependencies": {
-        "prettier": ">= 2.0.0"
+        "prettier": ">= 2.0.4"
     }
 }
