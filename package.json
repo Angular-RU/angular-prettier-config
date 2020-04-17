@@ -9,6 +9,10 @@
         "email": "splincodewd@yandex.ru",
         "url": "https://github.com/Angular-RU"
     },
+    "scripts": {
+        "prettier": "prettier",
+        "test": "prettier --write \"**/*.{ts,html,css,scss,md,js,json}\""
+    },
     "main": ".prettier.json",
     "files": [
         ".prettier.json"
