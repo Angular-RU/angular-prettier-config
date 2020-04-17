@@ -16,9 +16,9 @@
         "email": "splincodewd@yandex.ru",
         "url": "https://github.com/Angular-RU"
     },
-    "main": ".prettier.json",
+    "main": "prettier.config.js",
     "files": [
-        ".prettier.json"
+        "prettier.config.js"
     ],
     "scripts": {
         "format": "npx sort-package-json && npx prettier --write \"**/*.{ts,html,css,scss,md,js,json}\"",
