@@ -28,7 +28,7 @@
         "prettier": "2.0.5"
     },
     "devDependencies": {
-        "@types/node": "13.13.2",
+        "@types/node": "13.13.3",
         "npx": "10.2.2",
         "sort-package-json": "1.42.1",
         "ts-node": "8.9.1",
