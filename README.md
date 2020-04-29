@@ -8,7 +8,7 @@
     <img src="https://badge.fury.io/js/%40angular-ru%2Fprettier-config.svg" />
   </a>
   <a href="https://npm-stat.com/charts.html?package=%40angular-ru%2Fprettier-config&from=2019-09-01">
-    <img src="https://img.shields.io/npm/dt/@angular-ru/prettier-config.svg" />
+    <img src="https://img.shields.io/npm/dw/@angular-ru/prettier-config" />
   </a>
 </p>
 
